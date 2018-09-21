@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan =new Scanner(System.in);
+        BigInteger product=BigInteger.valueOf(0);
+        BigInteger sum=BigInteger.valueOf(0);
+        BigInteger num1=new BigInteger(scan.nextLine());
+        BigInteger num2=new BigInteger(scan.nextLine());
+        sum=sum.add(num1);
+        sum=sum.add(num2);
+        product=num1.multiply(num2);
+        System.out.println(sum + "\n" +product);
+        
+        
+    }
+}
